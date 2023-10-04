@@ -10,6 +10,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #c3f0ca;
+        display: flex;
+        justify-content: center;
       }
     
       .banner-image {
@@ -28,20 +30,34 @@
 
       .name {
         color: #fffffe;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
     }
 
       .social-icons a {
         color: #fffffe;
         text-decoration: none;
+        display: flex;
+        justify-content: space-around;
     }
 
       .link {
         background-color: #fef6e4;
+        display: flex;
+        align-items: center;
+        padding: 5px;
     }
 
       .link a {
         color: #001e1d;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
     }
 
       .items {
@@ -49,44 +65,51 @@
          flex-direction: column;
          gap: 30px;
          max-width: 640px;
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         flex-grow: 1;
     }
+
     </style>
   </head>
     
   <body>
     <p>"My link in bio"</p>
-    <div class="banner">
-      <img src="/thumbnails/palm_tree.jpg" alt="Francesca Di Cera Headshot" class="banner-image">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/thumbnails/palm_tree.jpg" alt="Francesca Di Cera Headshot" class="banner-image">
+      </div>
 
-    <div class="name">
-      Francesca Di Cera
-    </div>
+      <div class="name">
+        Francesca Di Cera
+      </div>
 
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/francesca-di-cera-8aa55614a" target="_blank">
-        LinkedIn
-      </a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/francesca-di-cera-8aa55614a" target="_blank">
+          LinkedIn
+        </a>
 
-      <a href="https://github.com/fdicera" target="_blank">
-        GitHub
-      </a>
-    </div>
+        <a href="https://github.com/fdicera" target="_blank">
+          GitHub
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="/thumbnails/arch.jpg" alt="St. Louis Arch" class="thumbnail">
-      <a target="_blank" href="https://facts.net/world/cities/30-facts-about-st-louis-mo/">St. Louis</a>
-    </div>
+      <div class="link">
+        <img src="/thumbnails/arch.jpg" alt="St. Louis Arch" class="thumbnail">
+        <a target="_blank" href="https://facts.net/world/cities/30-facts-about-st-louis-mo/">St. Louis</a>
+      </div>
 
-    <div class="link">
-      <img src="/thumbnails/cooking.jpg" alt="Cooking" class="thumbnail">
-      <a target="_blank" href="https://www.epicurious.com/">Cooking</a>
+      <div class="link">
+        <img src="/thumbnails/cooking.jpg" alt="Cooking" class="thumbnail">
+        <a target="_blank" href="https://www.epicurious.com/">Cooking</a>
 
-    </div>
+      </div>
 
-    <div class="link">
-      <img src="/thumbnails/coding.jpg" alt="R Coding" class="thumbnail">
-      <a target="_blank" href="https://r4ds.had.co.nz/">R coding</a>
+      <div class="link">
+        <img src="/thumbnails/coding.jpg" alt="R Coding" class="thumbnail">
+        <a target="_blank" href="https://r4ds.had.co.nz/">R coding</a>
+      </div>
     </div>
 
   </body>
