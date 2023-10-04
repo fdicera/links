@@ -5,12 +5,58 @@
     <meta charset="utf-8">
     <meta name=""author" content=""Francesca Di Cera">
 
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #004643;
+      }
+    
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;  
+      }
+
+      .name {
+        color: #fffffe;
+    }
+
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+    }
+
+      .link {
+        background-color: #f9bc60;
+    }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+    }
+
+      .items {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         max-width: 640px;
+    }
+    </style>
   </head>
     
   <body>
     <p>"My link in bio"</p>
     <div class="banner">
-      <img src="thumbnails/palm_tree.jpg" alt="Francesca Di Cera headshot">
+      <img src="thumbnails/palm_tree.jpg" alt="Francesca Di Cera Headshot" class="banner-image">
     </div>
 
     <div class="name">
@@ -43,7 +89,6 @@
       <img src="thumbnails/coding.jpg">
       <a target="_blank" href="https://r4ds.had.co.nz/"
     </div>
-
 
   </body>
 </html>
